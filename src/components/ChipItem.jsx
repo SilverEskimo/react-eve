@@ -1,7 +1,7 @@
 import { useState } from 'react';
+import { MyModal } from './MyModal';
 import Chip from '@mui/material/Chip';
 import DeleteIcon from '@mui/icons-material/Delete';
-import { MyModal } from './MyModal';
 
 
 export const ChipItem = ( {number, removeFromLikedList } ) => {
@@ -28,11 +28,11 @@ export const ChipItem = ( {number, removeFromLikedList } ) => {
                 chipFilled 
                 &&
                 <MyModal 
-                    color={"blue"}
-                    title={`Number: ${number.id}`}
-                    text={`${number.id} ${number.content}`}
+                    color={ "blue" }
+                    title={ `Number: ${number.id}` }
+                    text={ `${number.id} ${number.content}` }
                     setChipFilled={ setChipFilled }
-                    context={"chipItem"}
+                    context={ "chipItem" }
                 />
             }
         </div>    

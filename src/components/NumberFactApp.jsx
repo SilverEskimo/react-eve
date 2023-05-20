@@ -24,7 +24,6 @@ export const NumberFactApp = () => {
     }
     
     const removeFromLikedList = (numberToRemove) => {
-        
         setLikedNumberList(
             likedNumbersList.filter( 
                 (likedNumber) => {

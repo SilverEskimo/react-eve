@@ -9,12 +9,11 @@ export const MyModal = ({ setNumberExists, color, title, text, context, setChipF
     const [ open, setOpen ] = useState(true);
     
     const handleClose = () => {
-        if(context === "numExists"){
+        if (context === "numExists"){
             setNumberExists(false)
-        } else if(context === "chipItem") {
+        } else if (context === "chipItem") {
             setChipFilled(false)
         }
-        
         setOpen(false)
     }
 
@@ -35,8 +34,9 @@ export const MyModal = ({ setNumberExists, color, title, text, context, setChipF
                     border: `solid 1px ${color}`,
                     borderRadius: '10px',
                     boxShadow: 24,
-                    p: 6,
-                }}>
+                    p: 6
+                    }
+                }>
                     <Typography id="modal-modal-title" variant="h6" component="h2">
                         { title }
                     </Typography>

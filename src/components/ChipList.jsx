@@ -3,8 +3,7 @@ import { ChipItem } from "./ChipItem"
 
 export const ChipList = ( {likedNumbersList, removeFromLikedList} ) => {
         
-    const likedNumbers = likedNumbersList.map( (number) => {
-        
+    const likedNumbers = likedNumbersList.map( (number) => {    
         return(
             <>
                 <ChipItem 

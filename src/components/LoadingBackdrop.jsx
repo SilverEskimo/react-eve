@@ -8,7 +8,7 @@ export const LoadingBackdrop = ({open}) => {
         <div>        
             <Backdrop
                 sx={{ zIndex: (theme) => theme.zIndex.drawer + 1 }}
-                open={open}
+                open={ open }
             >
                 <CircularProgress sx={{color: "white"}} />
             </Backdrop>
