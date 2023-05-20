@@ -1,2 +1,1 @@
 # Numbers Facts app
-Tests
