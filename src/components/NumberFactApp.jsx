@@ -15,7 +15,7 @@ export const NumberFactApp = () => {
         if (!likedNumbersList.some( (numObject) => numObject.id === number)) {
             const newNumber = {
                 id: number,
-                content: numberToAdd.slice(number.length + 1, )
+                content: numberToAdd.slice(number.length + 1)
             }
             setLikedNumberList([...likedNumbersList, newNumber])
         } else {
