@@ -1,3 +1,4 @@
+import "../styles/NumberFactApp.css"
 import { useState } from "react"
 import { MyModal } from "./MyModal.jsx"
 import { ChipList } from "./ChipList.jsx"
@@ -34,7 +35,7 @@ export const NumberFactApp = () => {
     }
 
     return(   
-        <div style={ {
+        <div className="lala" style={ {
             display: "flex",
             flexDirection: "column",
             justifyContent: "center",

@@ -1,3 +1,4 @@
+import "../styles/FactResult.css"
 import axios from "axios"
 import { useState } from 'react';
 import Button from '@mui/material/Button';
@@ -21,13 +22,7 @@ export const FactResult = ( { addToLikedList } ) => {
 
     return(
         <>
-            <div 
-                style={{
-                    width: "200px", 
-                    margin: "auto", 
-                    marginBottom: "1em"
-                    }
-                }>
+            <div className="factResulCtn">
                 <Button 
                     variant="contained" 
                     endIcon={<SendIcon />}
@@ -42,28 +37,13 @@ export const FactResult = ( { addToLikedList } ) => {
             {   
                 factResult !== "" 
                 && 
-                <div 
-                    style={{
-                        display: "flex",
-                        flexDirection: "row",
-                        alignItems: "center",
-                        marginTop: "1em",
-                        paddingBottom: "2em",
-                        borderBottom: "solid 0.5px grey"
-                        }
-                    }>
+                <div className="factResult">
                     <p style={{ margin: "auto" }}>
                         { factResult }
                     </p>
                     <IconButton 
                         type="submit"
-                        onClick={ () => addToLikedList(factResult) }
-                        style={{
-                            marginLeft: "auto",
-                            border: "none",
-                            backgroundColor: "white"
-                            }
-                        }>
+                        onClick={ () => addToLikedList(factResult) }>
                         <ThumbUpOutlinedIcon color='primary'/>
                     </IconButton>
                 </div>

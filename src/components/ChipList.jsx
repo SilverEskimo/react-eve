@@ -1,4 +1,5 @@
 import { ChipItem } from "./ChipItem"
+import "../styles/ChipList.css"
 
 
 export const ChipList = ( {likedNumbersList, removeFromLikedList} ) => {
@@ -18,13 +19,8 @@ export const ChipList = ( {likedNumbersList, removeFromLikedList} ) => {
     return (
         <>
             <h3 style={{ marginTop: "2em" }}>Numbers You Liked:</h3>
-            <div style={ {
-                display: "flex",
-                flexDirection: "row",
-                flexWrap: "wrap",
-                marginTop: "2em",
-                justifyContent: "center"
-            }}>  
+            <div 
+                className="chipList">  
                 { likedNumbers }
             </div>
         </>

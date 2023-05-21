@@ -1,0 +1,21 @@
+.factResulCtn {
+    width: 200px; 
+    margin: auto; 
+    margin-bottom: 1em
+}
+
+.factResultIcn {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-top: 1em;
+    padding-bottom: 2em;
+    border-bottom: solid 0.5px grey;
+}
+
+
+.iconBtn {
+    margin-left: auto;
+    border: none;
+    background-color: white;
+}

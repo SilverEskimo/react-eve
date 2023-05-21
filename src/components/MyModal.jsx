@@ -1,3 +1,4 @@
+import "../styles/MyModal.css"
 import { useState } from 'react';
 import Box from '@mui/material/Box';
 import Modal from '@mui/material/Modal';
@@ -24,16 +25,9 @@ export const MyModal = ({ setNumberExists, color, title, text, context, setChipF
                 onClose={ handleClose }
                 aria-labelledby="modal-modal-title"
                 aria-describedby="modal-modal-description">
-                <Box sx={{
-                    position: 'absolute',
-                    textAlign: 'center',
-                    top: '50%',
-                    left: '50%',
-                    transform: 'translate(-50%, -50%)',
-                    bgcolor: 'background.paper',
+                <Box className="myModal" sx={{
                     border: `solid 1px ${color}`,
-                    borderRadius: '10px',
-                    boxShadow: 24,
+                    bgcolor: 'background.paper',
                     p: 6
                     }
                 }>
